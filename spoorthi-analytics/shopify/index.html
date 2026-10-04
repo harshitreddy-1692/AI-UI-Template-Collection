@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify Analytics Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <h2>Shopify</h2>
+
+        <nav>
+            <a href="index.html" class="active">Dashboard</a>
+            <a href="products.html">Products</a>
+            <a href="orders.html">Orders</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <p>Analytics</p>
+            <p>Settings</p>
+        </div>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+                <h1>Analytics Overview</h1>
+                <p>Track your store performance</p>
+            </div>
+
+            <button onclick="showMessage()">View Report</button>
+
+        </header>
+
+        <section class="kpi-grid">
+
+            <div class="card">
+                <span>Total Sales</span>
+                <h2>₹8,42,560</h2>
+                <p class="positive">+18.2%</p>
+            </div>
+
+            <div class="card">
+                <span>Orders</span>
+                <h2>2,486</h2>
+                <p class="positive">+12.5%</p>
+            </div>
+
+            <div class="card">
+                <span>Customers</span>
+                <h2>1,842</h2>
+                <p class="positive">+9.8%</p>
+            </div>
+
+            <div class="card">
+                <span>Conversion Rate</span>
+                <h2>3.82%</h2>
+                <p class="positive">+0.7%</p>
+            </div>
+
+        </section>
+
+        <section class="dashboard-grid">
+
+            <div class="panel large-panel">
+
+                <div class="panel-header">
+                    <h3>Sales Overview</h3>
+
+                    <select>
+                        <option>Last 30 Days</option>
+                        <option>Last 7 Days</option>
+                        <option>Last 90 Days</option>
+                    </select>
+                </div>
+
+                <div class="chart">
+
+                    <div class="bar" style="height:45%"></div>
+                    <div class="bar" style="height:58%"></div>
+                    <div class="bar" style="height:52%"></div>
+                    <div class="bar" style="height:70%"></div>
+                    <div class="bar" style="height:64%"></div>
+                    <div class="bar" style="height:82%"></div>
+                    <div class="bar" style="height:75%"></div>
+                    <div class="bar" style="height:92%"></div>
+                    <div class="bar" style="height:85%"></div>
+                    <div class="bar" style="height:96%"></div>
+
+                </div>
+
+                <div class="chart-labels">
+                    <span>1</span>
+                    <span>5</span>
+                    <span>10</span>
+                    <span>15</span>
+                    <span>20</span>
+                    <span>25</span>
+                    <span>30</span>
+                </div>
+
+            </div>
+
+            <div class="panel">
+
+                <h3>Sales by Channel</h3>
+
+                <div class="source">
+
+                    <div>
+                        <span>Online Store</span>
+                        <strong>52%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:52%"></div>
+                    </div>
+
+                </div>
+
+                <div class="source">
+
+                    <div>
+                        <span>Social Media</span>
+                        <strong>24%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:24%"></div>
+                    </div>
+
+                </div>
+
+                <div class="source">
+
+                    <div>
+                        <span>Marketplace</span>
+                        <strong>16%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:16%"></div>
+                    </div>
+
+                </div>
+
+                <div class="source">
+
+                    <div>
+                        <span>Other</span>
+                        <strong>8%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:8%"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="panel">
+
+            <h3>Recent Orders</h3>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>#SH10245</td>
+                        <td>Arjun Kumar</td>
+                        <td>₹4,250</td>
+                        <td>
+                            <span class="status completed">Paid</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>#SH10244</td>
+                        <td>Priya Sharma</td>
+                        <td>₹2,840</td>
+                        <td>
+                            <span class="status active-status">Processing</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>#SH10243</td>
+                        <td>Rahul Reddy</td>
+                        <td>₹6,420</td>
+                        <td>
+                            <span class="status completed">Paid</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>#SH10242</td>
+                        <td>Ananya Rao</td>
+                        <td>₹1,980</td>
+                        <td>
+                            <span class="status completed">Paid</span>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

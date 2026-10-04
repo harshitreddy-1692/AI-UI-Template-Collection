@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau Data Quality</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <h2>Tableau</h2>
+
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="explorer.html">Data Explorer</a>
+            <a href="quality.html" class="active">Insights</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <p>Workbooks</p>
+            <p>Settings</p>
+        </div>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+                <h1>Data Quality & Insights</h1>
+                <p>Monitor data health and discover insights</p>
+            </div>
+
+            <button onclick="showMessage()">Run Data Check</button>
+
+        </header>
+
+
+        <section class="kpi-grid">
+
+            <div class="card">
+                <span>Data Quality Score</span>
+                <h2>94.8%</h2>
+                <p class="positive">Excellent</p>
+            </div>
+
+            <div class="card">
+                <span>Valid Records</span>
+                <h2>2.64M</h2>
+                <p class="positive">97.2%</p>
+            </div>
+
+            <div class="card">
+                <span>Missing Values</span>
+                <h2>2.1%</h2>
+                <p class="negative">Needs review</p>
+            </div>
+
+            <div class="card">
+                <span>Duplicate Records</span>
+                <h2>0.8%</h2>
+                <p class="positive">Low</p>
+            </div>
+
+        </section>
+
+
+        <section class="dashboard-grid">
+
+            <div class="panel">
+
+                <h3>Data Quality Checks</h3>
+
+                <div class="quality-row">
+
+                    <div>
+                        <strong>Completeness</strong>
+                        <span>98%</span>
+                    </div>
+
+                    <div class="quality-bar">
+                        <div style="width:98%"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="quality-row">
+
+                    <div>
+                        <strong>Accuracy</strong>
+                        <span>96%</span>
+                    </div>
+
+                    <div class="quality-bar">
+                        <div style="width:96%"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="quality-row">
+
+                    <div>
+                        <strong>Consistency</strong>
+                        <span>93%</span>
+                    </div>
+
+                    <div class="quality-bar">
+                        <div style="width:93%"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="quality-row">
+
+                    <div>
+                        <strong>Uniqueness</strong>
+                        <span>99%</span>
+                    </div>
+
+                    <div class="quality-bar">
+                        <div style="width:99%"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="panel">
+
+                <h3>Key Insights</h3>
+
+                <div class="insight">
+                    <strong>↑ Revenue Growth</strong>
+                    <p>Technology sales increased by 18% this month.</p>
+                </div>
+
+                <div class="insight">
+                    <strong>↑ Customer Growth</strong>
+                    <p>New customers increased by 9.4%.</p>
+                </div>
+
+                <div class="insight">
+                    <strong>⚠ Missing Data</strong>
+                    <p>Some customer records require attention.</p>
+                </div>
+
+                <div class="insight">
+                    <strong>✓ Healthy Dataset</strong>
+                    <p>Overall data quality remains excellent.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="panel">
+
+            <h3>Data Quality Report</h3>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Dataset</th>
+                        <th>Completeness</th>
+                        <th>Accuracy</th>
+                        <th>Duplicates</th>
+                        <th>Status</th>
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+                        <td>Sales Data</td>
+                        <td>99%</td>
+                        <td>98%</td>
+                        <td>0.4%</td>
+                        <td>
+                            <span class="status completed">Healthy</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Customer Data</td>
+                        <td>96%</td>
+                        <td>95%</td>
+                        <td>0.8%</td>
+                        <td>
+                            <span class="status completed">Healthy</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Marketing Data</td>
+                        <td>91%</td>
+                        <td>92%</td>
+                        <td>1.2%</td>
+                        <td>
+                            <span class="status active-status">Review</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Inventory Data</td>
+                        <td>98%</td>
+                        <td>97%</td>
+                        <td>0.5%</td>
+                        <td>
+                            <span class="status completed">Healthy</span>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

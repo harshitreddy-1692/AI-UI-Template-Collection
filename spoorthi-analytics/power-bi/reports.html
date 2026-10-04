@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Power BI - Reports & Insights</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <span>▮</span> Power BI
+        </div>
+
+        <p class="menu-title">WORKSPACE</p>
+
+        <a href="index.html">
+            Dashboard
+        </a>
+
+        <a href="sales.html">
+            Sales Analytics
+        </a>
+
+        <a href="reports.html" class="active">
+            Reports
+        </a>
+
+        <p class="menu-title">TOOLS</p>
+
+        <a href="#">
+            Data
+        </a>
+
+        <a href="#">
+            Settings
+        </a>
+
+    </aside>
+
+
+    <!-- MAIN -->
+
+    <main class="main">
+
+        <!-- HEADER -->
+
+        <header class="header">
+
+            <div>
+
+                <h1>Reports & Insights</h1>
+
+                <p>
+                    Business reports and performance insights
+                </p>
+
+            </div>
+
+            <div class="header-buttons">
+
+                <button onclick="showMessage()">
+                    Refresh
+                </button>
+
+                <button class="primary" onclick="showMessage()">
+                    Create Report
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- FILTER -->
+
+        <div class="filter-box">
+
+            <label>Report Period</label>
+
+            <select>
+
+                <option>Monthly</option>
+                <option>Quarterly</option>
+                <option>Yearly</option>
+
+            </select>
+
+            <button class="primary" onclick="showMessage()">
+                Generate
+            </button>
+
+        </div>
+
+
+        <!-- REPORT CARDS -->
+
+        <section class="cards">
+
+            <div class="card">
+
+                <p>Monthly Revenue</p>
+
+                <h2>₹2.4M</h2>
+
+                <span class="positive">
+                    ↑ 18.5%
+                </span>
+
+            </div>
+
+
+            <div class="card">
+
+                <p>Monthly Profit</p>
+
+                <h2>₹680K</h2>
+
+                <span class="positive">
+                    ↑ 12.8%
+                </span>
+
+            </div>
+
+
+            <div class="card">
+
+                <p>Customer Growth</p>
+
+                <h2>7.2%</h2>
+
+                <span class="positive">
+                    ↑ 2.4%
+                </span>
+
+            </div>
+
+
+            <div class="card">
+
+                <p>Report Status</p>
+
+                <h2>Ready</h2>
+
+                <span class="positive">
+                    Updated
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- REPORT LIST -->
+
+        <div class="panel table-panel">
+
+            <div class="panel-header">
+
+                <div>
+
+                    <h2>Available Reports</h2>
+
+                    <p>
+                        View and manage business reports
+                    </p>
+
+                </div>
+
+                <button onclick="showMessage()">
+                    View All
+                </button>
+
+            </div>
+
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Report Name</th>
+
+                        <th>Category</th>
+
+                        <th>Updated</th>
+
+                        <th>Status</th>
+
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+
+                        <td>Monthly Sales Report</td>
+
+                        <td>Sales</td>
+
+                        <td>Today</td>
+
+                        <td class="positive">Ready</td>
+
+                        <td>
+                            <button onclick="showMessage()">
+                                View
+                            </button>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>Revenue Performance</td>
+
+                        <td>Finance</td>
+
+                        <td>Yesterday</td>
+
+                        <td class="positive">Ready</td>
+
+                        <td>
+                            <button onclick="showMessage()">
+                                View
+                            </button>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>Customer Analytics</td>
+
+                        <td>Customers</td>
+
+                        <td>2 Days Ago</td>
+
+                        <td class="positive">Ready</td>
+
+                        <td>
+                            <button onclick="showMessage()">
+                                View
+                            </button>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>Product Performance</td>
+
+                        <td>Products</td>
+
+                        <td>3 Days Ago</td>
+
+                        <td class="positive">Ready</td>
+
+                        <td>
+                            <button onclick="showMessage()">
+                                View
+                            </button>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>Regional Sales Report</td>
+
+                        <td>Sales</td>
+
+                        <td>5 Days Ago</td>
+
+                        <td class="positive">Ready</td>
+
+                        <td>
+                            <button onclick="showMessage()">
+                                View
+                            </button>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <!-- INSIGHTS -->
+
+        <section class="dashboard-grid">
+
+
+            <div class="panel">
+
+                <h2>Key Insights</h2>
+
+                <p>
+                    Important business observations
+                </p>
+
+
+                <div class="region">
+
+                    <div class="region-info">
+
+                        <span>Revenue Growth</span>
+
+                        <b>18.5%</b>
+
+                    </div>
+
+                    <div class="progress">
+
+                        <div style="width: 85%;"></div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="region">
+
+                    <div class="region-info">
+
+                        <span>Customer Growth</span>
+
+                        <b>72%</b>
+
+                    </div>
+
+                    <div class="progress">
+
+                        <div style="width: 72%;"></div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="region">
+
+                    <div class="region-info">
+
+                        <span>Target Achievement</span>
+
+                        <b>91%</b>
+
+                    </div>
+
+                    <div class="progress">
+
+                        <div style="width: 91%;"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="panel">
+
+                <h2>Report Summary</h2>
+
+                <p>
+                    Current reporting overview
+                </p>
+
+
+                <div class="region">
+
+                    <div class="region-info">
+
+                        <span>Total Reports</span>
+
+                        <b>24</b>
+
+                    </div>
+
+                </div>
+
+
+                <div class="region">
+
+                    <div class="region-info">
+
+                        <span>Updated Reports</span>
+
+                        <b>21</b>
+
+                    </div>
+
+                </div>
+
+
+                <div class="region">
+
+                    <div class="region-info">
+
+                        <span>Pending Reports</span>
+
+                        <b>3</b>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <p class="footer">
+
+            Original educational UI template • HTML + CSS + JavaScript
+
+        </p>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

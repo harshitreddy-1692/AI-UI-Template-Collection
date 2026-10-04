@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify Product Analytics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <h2>Shopify</h2>
+
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="products.html" class="active">Products</a>
+            <a href="orders.html">Orders</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <p>Analytics</p>
+            <p>Settings</p>
+        </div>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+                <h1>Product Analytics</h1>
+                <p>Understand your product performance</p>
+            </div>
+
+            <button onclick="showMessage()">Add Product</button>
+
+        </header>
+
+        <section class="kpi-grid">
+
+            <div class="card">
+                <span>Total Products</span>
+                <h2>486</h2>
+                <p class="positive">+24 this month</p>
+            </div>
+
+            <div class="card">
+                <span>Best Seller</span>
+                <h2>Wireless Earbuds</h2>
+                <p class="positive">1,284 sold</p>
+            </div>
+
+            <div class="card">
+                <span>Average Price</span>
+                <h2>₹2,840</h2>
+                <p class="positive">+5.2%</p>
+            </div>
+
+            <div class="card">
+                <span>Low Stock</span>
+                <h2>18</h2>
+                <p class="negative">Needs attention</p>
+            </div>
+
+        </section>
+
+        <section class="panel">
+
+            <div class="panel-header">
+
+                <h3>Top Products</h3>
+
+                <select>
+                    <option>By Sales</option>
+                    <option>By Orders</option>
+                    <option>By Revenue</option>
+                </select>
+
+            </div>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Product</th>
+                        <th>Category</th>
+                        <th>Units Sold</th>
+                        <th>Revenue</th>
+                        <th>Stock</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Wireless Earbuds</td>
+                        <td>Electronics</td>
+                        <td>1,284</td>
+                        <td>₹25,68,000</td>
+                        <td>
+                            <span class="status completed">In Stock</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Smart Watch</td>
+                        <td>Electronics</td>
+                        <td>986</td>
+                        <td>₹19,72,000</td>
+                        <td>
+                            <span class="status completed">In Stock</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Travel Backpack</td>
+                        <td>Accessories</td>
+                        <td>742</td>
+                        <td>₹11,13,000</td>
+                        <td>
+                            <span class="status active-status">Low Stock</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Running Shoes</td>
+                        <td>Footwear</td>
+                        <td>625</td>
+                        <td>₹9,37,500</td>
+                        <td>
+                            <span class="status completed">In Stock</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Phone Case</td>
+                        <td>Accessories</td>
+                        <td>548</td>
+                        <td>₹2,74,000</td>
+                        <td>
+                            <span class="status active-status">Low Stock</span>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <section class="dashboard-grid">
+
+            <div class="panel">
+
+                <h3>Product Categories</h3>
+
+                <div class="source">
+
+                    <div>
+                        <span>Electronics</span>
+                        <strong>46%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:46%"></div>
+                    </div>
+
+                </div>
+
+                <div class="source">
+
+                    <div>
+                        <span>Accessories</span>
+                        <strong>24%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:24%"></div>
+                    </div>
+
+                </div>
+
+                <div class="source">
+
+                    <div>
+                        <span>Fashion</span>
+                        <strong>18%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:18%"></div>
+                    </div>
+
+                </div>
+
+                <div class="source">
+
+                    <div>
+                        <span>Others</span>
+                        <strong>12%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:12%"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="panel">
+
+                <h3>Inventory Status</h3>
+
+                <div class="lead-stat">
+                    <span>In Stock</span>
+                    <strong>402</strong>
+                </div>
+
+                <div class="lead-stat">
+                    <span>Low Stock</span>
+                    <strong>18</strong>
+                </div>
+
+                <div class="lead-stat">
+                    <span>Out of Stock</span>
+                    <strong>6</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

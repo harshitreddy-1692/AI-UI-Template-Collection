@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau Analytics Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <h2>Tableau</h2>
+
+        <nav>
+            <a href="index.html" class="active">Dashboard</a>
+            <a href="explorer.html">Data Explorer</a>
+            <a href="quality.html">Insights</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <p>Workbooks</p>
+            <p>Settings</p>
+        </div>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+                <h1>Analytics Dashboard</h1>
+                <p>Visualize and understand your business data</p>
+            </div>
+
+            <button onclick="showMessage()">Share Dashboard</button>
+
+        </header>
+
+
+        <section class="kpi-grid">
+
+            <div class="card">
+                <span>Total Revenue</span>
+                <h2>₹12.8M</h2>
+                <p class="positive">+14.6%</p>
+            </div>
+
+            <div class="card">
+                <span>Total Sales</span>
+                <h2>28,450</h2>
+                <p class="positive">+11.2%</p>
+            </div>
+
+            <div class="card">
+                <span>Customers</span>
+                <h2>8,642</h2>
+                <p class="positive">+9.4%</p>
+            </div>
+
+            <div class="card">
+                <span>Profit Margin</span>
+                <h2>32.8%</h2>
+                <p class="positive">+3.2%</p>
+            </div>
+
+        </section>
+
+
+        <section class="dashboard-grid">
+
+            <div class="panel large-panel">
+
+                <div class="panel-header">
+
+                    <h3>Revenue Trend</h3>
+
+                    <select>
+                        <option>2026</option>
+                        <option>2025</option>
+                        <option>2024</option>
+                    </select>
+
+                </div>
+
+
+                <div class="chart">
+
+                    <div class="bar" style="height:45%"></div>
+                    <div class="bar" style="height:55%"></div>
+                    <div class="bar" style="height:50%"></div>
+                    <div class="bar" style="height:68%"></div>
+                    <div class="bar" style="height:62%"></div>
+                    <div class="bar" style="height:78%"></div>
+                    <div class="bar" style="height:70%"></div>
+                    <div class="bar" style="height:88%"></div>
+                    <div class="bar" style="height:82%"></div>
+                    <div class="bar" style="height:94%"></div>
+                    <div class="bar" style="height:86%"></div>
+                    <div class="bar" style="height:98%"></div>
+
+                </div>
+
+
+                <div class="chart-labels">
+                    <span>Jan</span>
+                    <span>Feb</span>
+                    <span>Mar</span>
+                    <span>Apr</span>
+                    <span>May</span>
+                    <span>Jun</span>
+                    <span>Jul</span>
+                    <span>Aug</span>
+                    <span>Sep</span>
+                    <span>Oct</span>
+                    <span>Nov</span>
+                    <span>Dec</span>
+                </div>
+
+            </div>
+
+
+            <div class="panel">
+
+                <h3>Sales by Region</h3>
+
+
+                <div class="source">
+
+                    <div>
+                        <span>North</span>
+                        <strong>32%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:32%"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="source">
+
+                    <div>
+                        <span>South</span>
+                        <strong>28%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:28%"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="source">
+
+                    <div>
+                        <span>West</span>
+                        <strong>24%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:24%"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="source">
+
+                    <div>
+                        <span>East</span>
+                        <strong>16%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:16%"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="panel">
+
+            <h3>Top Performing Categories</h3>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Category</th>
+                        <th>Sales</th>
+                        <th>Revenue</th>
+                        <th>Profit</th>
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+                        <td>Technology</td>
+                        <td>8,420</td>
+                        <td>₹4.82M</td>
+                        <td>₹1.62M</td>
+                    </tr>
+
+                    <tr>
+                        <td>Furniture</td>
+                        <td>6,280</td>
+                        <td>₹3.46M</td>
+                        <td>₹1.08M</td>
+                    </tr>
+
+                    <tr>
+                        <td>Office Supplies</td>
+                        <td>7,850</td>
+                        <td>₹2.72M</td>
+                        <td>₹0.94M</td>
+                    </tr>
+
+                    <tr>
+                        <td>Accessories</td>
+                        <td>5,900</td>
+                        <td>₹1.80M</td>
+                        <td>₹0.62M</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

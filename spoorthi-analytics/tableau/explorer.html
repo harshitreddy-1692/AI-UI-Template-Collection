@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau Data Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <h2>Tableau</h2>
+
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="explorer.html" class="active">Data Explorer</a>
+            <a href="quality.html">Insights</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <p>Workbooks</p>
+            <p>Settings</p>
+        </div>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+                <h1>Data Explorer</h1>
+                <p>Explore datasets and discover useful patterns</p>
+            </div>
+
+            <button onclick="showMessage()">Add Data Source</button>
+
+        </header>
+
+
+        <section class="kpi-grid">
+
+            <div class="card">
+                <span>Data Sources</span>
+                <h2>18</h2>
+                <p class="positive">+3 this month</p>
+            </div>
+
+            <div class="card">
+                <span>Datasets</span>
+                <h2>64</h2>
+                <p class="positive">+8.2%</p>
+            </div>
+
+            <div class="card">
+                <span>Data Rows</span>
+                <h2>2.8M</h2>
+                <p class="positive">+15.4%</p>
+            </div>
+
+            <div class="card">
+                <span>Refresh Rate</span>
+                <h2>98.4%</h2>
+                <p class="positive">Healthy</p>
+            </div>
+
+        </section>
+
+
+        <section class="panel">
+
+            <div class="panel-header">
+
+                <h3>Available Data Sources</h3>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search data..."
+                    onkeyup="searchData()"
+                >
+
+            </div>
+
+
+            <table id="dataTable">
+
+                <thead>
+
+                    <tr>
+                        <th>Data Source</th>
+                        <th>Type</th>
+                        <th>Records</th>
+                        <th>Last Updated</th>
+                        <th>Status</th>
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+                        <td>Sales Database</td>
+                        <td>SQL</td>
+                        <td>845,620</td>
+                        <td>02 Oct 2026</td>
+                        <td>
+                            <span class="status completed">Connected</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Customer Data</td>
+                        <td>CSV</td>
+                        <td>284,520</td>
+                        <td>01 Oct 2026</td>
+                        <td>
+                            <span class="status completed">Connected</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Marketing Data</td>
+                        <td>Excel</td>
+                        <td>124,860</td>
+                        <td>30 Sep 2026</td>
+                        <td>
+                            <span class="status active-status">Refreshing</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Finance Data</td>
+                        <td>SQL</td>
+                        <td>562,420</td>
+                        <td>29 Sep 2026</td>
+                        <td>
+                            <span class="status completed">Connected</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Inventory Data</td>
+                        <td>API</td>
+                        <td>96,240</td>
+                        <td>28 Sep 2026</td>
+                        <td>
+                            <span class="status completed">Connected</span>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <section class="dashboard-grid">
+
+            <div class="panel">
+
+                <h3>Popular Dimensions</h3>
+
+                <div class="lead-stat">
+                    <span>Region</span>
+                    <strong>84%</strong>
+                </div>
+
+                <div class="lead-stat">
+                    <span>Product</span>
+                    <strong>76%</strong>
+                </div>
+
+                <div class="lead-stat">
+                    <span>Customer</span>
+                    <strong>64%</strong>
+                </div>
+
+                <div class="lead-stat">
+                    <span>Time</span>
+                    <strong>58%</strong>
+                </div>
+
+            </div>
+
+
+            <div class="panel">
+
+                <h3>Data Types</h3>
+
+                <div class="source">
+
+                    <div>
+                        <span>Structured</span>
+                        <strong>68%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:68%"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="source">
+
+                    <div>
+                        <span>Unstructured</span>
+                        <strong>18%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:18%"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="source">
+
+                    <div>
+                        <span>External</span>
+                        <strong>14%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:14%"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
