@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Google Analytics - Acquisition</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <span>●</span> Analytics
+        </div>
+
+
+        <p class="menu-title">MAIN MENU</p>
+
+        <a href="index.html">
+            Overview
+        </a>
+
+        <a href="answer.html" class="active">
+            Acquisition
+        </a>
+
+        <a href="upgrade.html">
+            Engagement
+        </a>
+
+
+        <p class="menu-title">ACCOUNT</p>
+
+        <a href="#">
+            Settings
+        </a>
+
+        <a href="#">
+            Help Center
+        </a>
+
+    </aside>
+
+
+
+    <main class="main">
+
+
+        <header class="header">
+
+            <div>
+
+                <h1>Acquisition</h1>
+
+                <p>
+                    Understand how users arrive at your website
+                </p>
+
+            </div>
+
+
+            <div class="header-buttons">
+
+                <button onclick="showMessage()">
+                    Export
+                </button>
+
+                <button class="primary" onclick="showMessage()">
+                    + Create
+                </button>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- KPI CARDS -->
+
+        <section class="cards">
+
+            <div class="card">
+
+                <p>New Users</p>
+
+                <h2>8,940</h2>
+
+                <span class="positive">
+                    ↑ 15.3%
+                </span>
+
+            </div>
+
+
+            <div class="card">
+
+                <p>Returning Users</p>
+
+                <h2>3,540</h2>
+
+                <span class="positive">
+                    ↑ 6.8%
+                </span>
+
+            </div>
+
+
+            <div class="card">
+
+                <p>New User Rate</p>
+
+                <h2>71.6%</h2>
+
+                <span class="positive">
+                    ↑ 2.1%
+                </span>
+
+            </div>
+
+
+            <div class="card">
+
+                <p>Total Traffic</p>
+
+                <h2>18,920</h2>
+
+                <span class="positive">
+                    ↑ 11.2%
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- TABLE -->
+
+        <div class="panel" style="margin-top: 20px;">
+
+            <h2>Acquisition Channels</h2>
+
+            <p style="margin-bottom: 20px;">
+                Traffic sources bringing users to your website
+            </p>
+
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search channels..."
+                style="
+                    width:100%;
+                    padding:12px;
+                    border:1px solid #ddd;
+                    border-radius:8px;
+                    margin-bottom:15px;
+                "
+                onkeyup="searchTable()"
+            >
+
+
+            <table style="width:100%; border-collapse:collapse;">
+
+                <thead>
+
+                    <tr>
+
+                        <th style="padding:12px; text-align:left;">
+                            Channel
+                        </th>
+
+                        <th style="padding:12px; text-align:left;">
+                            Users
+                        </th>
+
+                        <th style="padding:12px; text-align:left;">
+                            Conversion
+                        </th>
+
+                        <th style="padding:12px; text-align:left;">
+                            Status
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="channelTable">
+
+                    <tr>
+
+                        <td style="padding:12px;">
+                            Organic Search
+                        </td>
+
+                        <td style="padding:12px;">
+                            7,840
+                        </td>
+
+                        <td style="padding:12px;">
+                            12%
+                        </td>
+
+                        <td style="padding:12px;">
+                            Active
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td style="padding:12px;">
+                            Direct
+                        </td>
+
+                        <td style="padding:12px;">
+                            5,620
+                        </td>
+
+                        <td style="padding:12px;">
+                            9%
+                        </td>
+
+                        <td style="padding:12px;">
+                            Active
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td style="padding:12px;">
+                            Social
+                        </td>
+
+                        <td style="padding:12px;">
+                            3,480
+                        </td>
+
+                        <td style="padding:12px;">
+                            7%
+                        </td>
+
+                        <td style="padding:12px;">
+                            Active
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td style="padding:12px;">
+                            Email
+                        </td>
+
+                        <td style="padding:12px;">
+                            1,240
+                        </td>
+
+                        <td style="padding:12px;">
+                            15%
+                        </td>
+
+                        <td style="padding:12px;">
+                            Active
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td style="padding:12px;">
+                            Referral
+                        </td>
+
+                        <td style="padding:12px;">
+                            740
+                        </td>
+
+                        <td style="padding:12px;">
+                            6%
+                        </td>
+
+                        <td style="padding:12px;">
+                            Active
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify Orders Analytics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <h2>Shopify</h2>
+
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="products.html">Products</a>
+            <a href="orders.html" class="active">Orders</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <p>Analytics</p>
+            <p>Settings</p>
+        </div>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+                <h1>Orders Analytics</h1>
+                <p>Track orders and fulfillment</p>
+            </div>
+
+            <button onclick="showMessage()">Export Orders</button>
+
+        </header>
+
+        <section class="kpi-grid">
+
+            <div class="card">
+                <span>Total Orders</span>
+                <h2>2,486</h2>
+                <p class="positive">+12.5%</p>
+            </div>
+
+            <div class="card">
+                <span>Pending</span>
+                <h2>184</h2>
+                <p class="negative">Needs attention</p>
+            </div>
+
+            <div class="card">
+                <span>Completed</span>
+                <h2>2,146</h2>
+                <p class="positive">86.3%</p>
+            </div>
+
+            <div class="card">
+                <span>Refunded</span>
+                <h2>156</h2>
+                <p class="negative">6.2%</p>
+            </div>
+
+        </section>
+
+        <section class="dashboard-grid">
+
+            <div class="panel large-panel">
+
+                <div class="panel-header">
+
+                    <h3>Orders Overview</h3>
+
+                    <select>
+                        <option>Last 30 Days</option>
+                        <option>Last 7 Days</option>
+                    </select>
+
+                </div>
+
+                <div class="chart">
+
+                    <div class="bar" style="height:40%"></div>
+                    <div class="bar" style="height:55%"></div>
+                    <div class="bar" style="height:48%"></div>
+                    <div class="bar" style="height:68%"></div>
+                    <div class="bar" style="height:60%"></div>
+                    <div class="bar" style="height:78%"></div>
+                    <div class="bar" style="height:72%"></div>
+                    <div class="bar" style="height:88%"></div>
+                    <div class="bar" style="height:82%"></div>
+                    <div class="bar" style="height:94%"></div>
+
+                </div>
+
+                <div class="chart-labels">
+                    <span>1</span>
+                    <span>5</span>
+                    <span>10</span>
+                    <span>15</span>
+                    <span>20</span>
+                    <span>25</span>
+                    <span>30</span>
+                </div>
+
+            </div>
+
+            <div class="panel">
+
+                <h3>Order Status</h3>
+
+                <div class="source">
+
+                    <div>
+                        <span>Completed</span>
+                        <strong>86%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:86%"></div>
+                    </div>
+
+                </div>
+
+                <div class="source">
+
+                    <div>
+                        <span>Processing</span>
+                        <strong>8%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:8%"></div>
+                    </div>
+
+                </div>
+
+                <div class="source">
+
+                    <div>
+                        <span>Cancelled</span>
+                        <strong>4%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:4%"></div>
+                    </div>
+
+                </div>
+
+                <div class="source">
+
+                    <div>
+                        <span>Refunded</span>
+                        <strong>2%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:2%"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="panel">
+
+            <div class="panel-header">
+
+                <h3>Recent Orders</h3>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search orders..."
+                    onkeyup="searchOrders()"
+                >
+
+            </div>
+
+            <table id="ordersTable">
+
+                <thead>
+
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>#SH10245</td>
+                        <td>Arjun Kumar</td>
+                        <td>02 Oct 2026</td>
+                        <td>₹4,250</td>
+                        <td>
+                            <span class="status completed">Completed</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>#SH10244</td>
+                        <td>Priya Sharma</td>
+                        <td>02 Oct 2026</td>
+                        <td>₹2,840</td>
+                        <td>
+                            <span class="status active-status">Processing</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>#SH10243</td>
+                        <td>Rahul Reddy</td>
+                        <td>01 Oct 2026</td>
+                        <td>₹6,420</td>
+                        <td>
+                            <span class="status completed">Completed</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>#SH10242</td>
+                        <td>Ananya Rao</td>
+                        <td>01 Oct 2026</td>
+                        <td>₹1,980</td>
+                        <td>
+                            <span class="status completed">Completed</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>#SH10241</td>
+                        <td>Vikram Singh</td>
+                        <td>30 Sep 2026</td>
+                        <td>₹3,650</td>
+                        <td>
+                            <span class="status active-status">Processing</span>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
