@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HubSpot Contacts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <h2>HubSpot</h2>
+
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="marketing.html">Marketing</a>
+            <a href="contacts.html" class="active">Contacts</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <p>Analytics</p>
+            <p>Settings</p>
+        </div>
+
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+
+            <div>
+                <h1>Contacts & Leads</h1>
+                <p>Manage contacts and track your sales funnel</p>
+            </div>
+
+            <button onclick="showMessage()">Add Contact</button>
+
+        </header>
+
+        <section class="kpi-grid">
+
+            <div class="card">
+                <span>Total Contacts</span>
+                <h2>24,582</h2>
+                <p class="positive">+8.4%</p>
+            </div>
+
+            <div class="card">
+                <span>New Leads</span>
+                <h2>1,842</h2>
+                <p class="positive">+12.6%</p>
+            </div>
+
+            <div class="card">
+                <span>Qualified Leads</span>
+                <h2>936</h2>
+                <p class="positive">+7.8%</p>
+            </div>
+
+            <div class="card">
+                <span>Customers</span>
+                <h2>428</h2>
+                <p class="positive">+5.3%</p>
+            </div>
+
+        </section>
+
+        <section class="dashboard-grid">
+
+            <div class="panel">
+
+                <h3>Lead Funnel</h3>
+
+                <div class="funnel">
+                    <div class="funnel-item">
+                        <span>Visitors</span>
+                        <strong>12,500</strong>
+                    </div>
+
+                    <div class="funnel-item">
+                        <span>Leads</span>
+                        <strong>4,820</strong>
+                    </div>
+
+                    <div class="funnel-item">
+                        <span>Qualified</span>
+                        <strong>2,140</strong>
+                    </div>
+
+                    <div class="funnel-item">
+                        <span>Customers</span>
+                        <strong>428</strong>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="panel">
+
+                <h3>Contact Sources</h3>
+
+                <div class="source">
+                    <div>
+                        <span>Website</span>
+                        <strong>45%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:45%"></div>
+                    </div>
+                </div>
+
+                <div class="source">
+                    <div>
+                        <span>Email</span>
+                        <strong>25%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:25%"></div>
+                    </div>
+                </div>
+
+                <div class="source">
+                    <div>
+                        <span>Social Media</span>
+                        <strong>20%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:20%"></div>
+                    </div>
+                </div>
+
+                <div class="source">
+                    <div>
+                        <span>Referral</span>
+                        <strong>10%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:10%"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="panel">
+
+            <div class="panel-header">
+                <h3>Recent Contacts</h3>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search contacts..."
+                    onkeyup="searchContacts()"
+                >
+            </div>
+
+            <table id="contactsTable">
+
+                <thead>
+
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Company</th>
+                        <th>Lead Status</th>
+                        <th>Source</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Arjun Kumar</td>
+                        <td>arjun@example.com</td>
+                        <td>Tech Solutions</td>
+                        <td><span class="status active-status">Qualified</span></td>
+                        <td>Website</td>
+                    </tr>
+
+                    <tr>
+                        <td>Priya Sharma</td>
+                        <td>priya@example.com</td>
+                        <td>Digital Works</td>
+                        <td><span class="status active-status">New</span></td>
+                        <td>Email</td>
+                    </tr>
+
+                    <tr>
+                        <td>Rahul Reddy</td>
+                        <td>rahul@example.com</td>
+                        <td>Cloud Systems</td>
+                        <td><span class="status completed">Customer</span></td>
+                        <td>Referral</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ananya Rao</td>
+                        <td>ananya@example.com</td>
+                        <td>Marketing Hub</td>
+                        <td><span class="status active-status">Qualified</span></td>
+                        <td>Social Media</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vikram Singh</td>
+                        <td>vikram@example.com</td>
+                        <td>NextGen Tech</td>
+                        <td><span class="status active-status">New</span></td>
+                        <td>Website</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

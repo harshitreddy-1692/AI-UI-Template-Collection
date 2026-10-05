@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Power BI - Executive Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <span>▮</span> Power BI
+        </div>
+
+        <p class="menu-title">WORKSPACE</p>
+
+        <a href="index.html" class="active">
+            Dashboard
+        </a>
+
+        <a href="sales.html">
+            Sales Analytics
+        </a>
+
+        <a href="reports.html">
+            Reports
+        </a>
+
+        <p class="menu-title">TOOLS</p>
+
+        <a href="#">
+            Data
+        </a>
+
+        <a href="#">
+            Settings
+        </a>
+
+    </aside>
+
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- HEADER -->
+        <header class="header">
+
+            <div>
+                <h1>Executive Dashboard</h1>
+
+                <p>
+                    Business performance at a glance
+                </p>
+            </div>
+
+            <div class="header-buttons">
+
+                <button onclick="showMessage()">
+                    Refresh
+                </button>
+
+                <button class="primary" onclick="showMessage()">
+                    Export
+                </button>
+
+            </div>
+
+        </header>
+
+
+        <!-- FILTER -->
+        <div class="filter-box">
+
+            <label>Period</label>
+
+            <select>
+                <option>Last 30 Days</option>
+                <option>Last 7 Days</option>
+                <option>Last 90 Days</option>
+                <option>This Year</option>
+            </select>
+
+            <button class="primary" onclick="showMessage()">
+                Apply
+            </button>
+
+        </div>
+
+
+        <!-- KPI CARDS -->
+        <section class="cards">
+
+            <div class="card">
+
+                <p>Total Revenue</p>
+
+                <h2>₹2.4M</h2>
+
+                <span class="positive">
+                    ↑ 18.5%
+                </span>
+
+                <small>vs previous period</small>
+
+            </div>
+
+
+            <div class="card">
+
+                <p>Total Profit</p>
+
+                <h2>₹680K</h2>
+
+                <span class="positive">
+                    ↑ 12.8%
+                </span>
+
+                <small>vs previous period</small>
+
+            </div>
+
+
+            <div class="card">
+
+                <p>Total Orders</p>
+
+                <h2>12,480</h2>
+
+                <span class="positive">
+                    ↑ 9.4%
+                </span>
+
+                <small>vs previous period</small>
+
+            </div>
+
+
+            <div class="card">
+
+                <p>Customers</p>
+
+                <h2>8,920</h2>
+
+                <span class="positive">
+                    ↑ 7.2%
+                </span>
+
+                <small>vs previous period</small>
+
+            </div>
+
+        </section>
+
+
+        <!-- CHART SECTION -->
+        <section class="dashboard-grid">
+
+            <!-- REVENUE CHART -->
+            <div class="panel large">
+
+                <div class="panel-header">
+
+                    <div>
+                        <h2>Revenue Trend</h2>
+
+                        <p>
+                            Monthly revenue performance
+                        </p>
+                    </div>
+
+                    <select>
+                        <option>2026</option>
+                        <option>2025</option>
+                    </select>
+
+                </div>
+
+
+                <div class="chart">
+
+                    <div class="chart-column">
+                        <div class="bar" style="height:35%;"></div>
+                        <span>Jan</span>
+                    </div>
+
+                    <div class="chart-column">
+                        <div class="bar" style="height:45%;"></div>
+                        <span>Feb</span>
+                    </div>
+
+                    <div class="chart-column">
+                        <div class="bar" style="height:50%;"></div>
+                        <span>Mar</span>
+                    </div>
+
+                    <div class="chart-column">
+                        <div class="bar" style="height:62%;"></div>
+                        <span>Apr</span>
+                    </div>
+
+                    <div class="chart-column">
+                        <div class="bar" style="height:58%;"></div>
+                        <span>May</span>
+                    </div>
+
+                    <div class="chart-column">
+                        <div class="bar" style="height:72%;"></div>
+                        <span>Jun</span>
+                    </div>
+
+                    <div class="chart-column">
+                        <div class="bar" style="height:80%;"></div>
+                        <span>Jul</span>
+                    </div>
+
+                    <div class="chart-column">
+                        <div class="bar" style="height:88%;"></div>
+                        <span>Aug</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- REGIONAL SALES -->
+            <div class="panel">
+
+                <h2>Regional Sales</h2>
+
+                <p>Sales distribution by region</p>
+
+
+                <div class="region">
+
+                    <div class="region-info">
+                        <span>North</span>
+                        <b>32%</b>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:32%;"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="region">
+
+                    <div class="region-info">
+                        <span>South</span>
+                        <b>28%</b>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:28%;"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="region">
+
+                    <div class="region-info">
+                        <span>West</span>
+                        <b>24%</b>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:24%;"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="region">
+
+                    <div class="region-info">
+                        <span>East</span>
+                        <b>16%</b>
+                    </div>
+
+                    <div class="progress">
+                        <div style="width:16%;"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TOP PRODUCTS -->
+        <div class="panel table-panel">
+
+            <div class="panel-header">
+
+                <div>
+                    <h2>Top Products</h2>
+
+                    <p>
+                        Best performing products
+                    </p>
+                </div>
+
+                <button onclick="showMessage()">
+                    View All
+                </button>
+
+            </div>
+
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Product</th>
+                        <th>Sales</th>
+                        <th>Profit</th>
+                        <th>Growth</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+
+                        <td>Laptop Pro</td>
+                        <td>₹450K</td>
+                        <td>₹120K</td>
+                        <td class="positive">+18%</td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>Smartphone X</td>
+                        <td>₹380K</td>
+                        <td>₹95K</td>
+                        <td class="positive">+14%</td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>Tablet Air</td>
+                        <td>₹240K</td>
+                        <td>₹60K</td>
+                        <td class="positive">+11%</td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>Wireless Headphones</td>
+                        <td>₹185K</td>
+                        <td>₹48K</td>
+                        <td class="positive">+8%</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+
+        <p class="footer">
+            Original educational UI template • HTML + CSS + JavaScript
+        </p>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

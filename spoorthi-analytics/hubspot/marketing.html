@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HubSpot Marketing Analytics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <h2>HubSpot</h2>
+
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="marketing.html" class="active">Marketing</a>
+            <a href="contacts.html">Contacts</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <p>Analytics</p>
+            <p>Settings</p>
+        </div>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <h1>Marketing Analytics</h1>
+                <p>Track your marketing campaigns and performance</p>
+            </div>
+
+            <button onclick="showMessage()">Create Campaign</button>
+        </header>
+
+        <section class="kpi-grid">
+
+            <div class="card">
+                <span>Campaigns</span>
+                <h2>24</h2>
+                <p class="positive">+4 this month</p>
+            </div>
+
+            <div class="card">
+                <span>Email Opens</span>
+                <h2>68.4K</h2>
+                <p class="positive">+14.2%</p>
+            </div>
+
+            <div class="card">
+                <span>Click Rate</span>
+                <h2>8.42%</h2>
+                <p class="positive">+2.1%</p>
+            </div>
+
+            <div class="card">
+                <span>Marketing ROI</span>
+                <h2>324%</h2>
+                <p class="positive">+18.6%</p>
+            </div>
+
+        </section>
+
+        <section class="dashboard-grid">
+
+            <div class="panel large-panel">
+
+                <div class="panel-header">
+                    <h3>Campaign Performance</h3>
+
+                    <select>
+                        <option>Last 30 Days</option>
+                        <option>Last 90 Days</option>
+                    </select>
+                </div>
+
+                <div class="chart">
+                    <div class="bar" style="height:50%"></div>
+                    <div class="bar" style="height:70%"></div>
+                    <div class="bar" style="height:58%"></div>
+                    <div class="bar" style="height:80%"></div>
+                    <div class="bar" style="height:68%"></div>
+                    <div class="bar" style="height:90%"></div>
+                    <div class="bar" style="height:82%"></div>
+                    <div class="bar" style="height:95%"></div>
+                </div>
+
+                <div class="chart-labels">
+                    <span>Week 1</span>
+                    <span>Week 2</span>
+                    <span>Week 3</span>
+                    <span>Week 4</span>
+                </div>
+
+            </div>
+
+            <div class="panel">
+                <h3>Lead Generation</h3>
+
+                <div class="lead-stat">
+                    <span>Organic</span>
+                    <strong>1,842</strong>
+                </div>
+
+                <div class="lead-stat">
+                    <span>Email</span>
+                    <strong>1,245</strong>
+                </div>
+
+                <div class="lead-stat">
+                    <span>Social</span>
+                    <strong>932</strong>
+                </div>
+
+                <div class="lead-stat">
+                    <span>Paid Ads</span>
+                    <strong>687</strong>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="panel">
+
+            <h3>Marketing Campaigns</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Campaign</th>
+                        <th>Reach</th>
+                        <th>Clicks</th>
+                        <th>Leads</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Summer Sale</td>
+                        <td>25,430</td>
+                        <td>3,842</td>
+                        <td>624</td>
+                        <td><span class="status active-status">Active</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>Product Launch</td>
+                        <td>18,620</td>
+                        <td>2,934</td>
+                        <td>512</td>
+                        <td><span class="status active-status">Active</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>Email Promotion</td>
+                        <td>14,280</td>
+                        <td>2,210</td>
+                        <td>385</td>
+                        <td><span class="status completed">Completed</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>Social Campaign</td>
+                        <td>12,840</td>
+                        <td>1,860</td>
+                        <td>294</td>
+                        <td><span class="status completed">Completed</span></td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
